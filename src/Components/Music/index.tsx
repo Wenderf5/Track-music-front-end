@@ -49,7 +49,7 @@ export function Music({ track }: props) {
   }
 
   return (
-    <main className={style.main} onClick={playPause}>
+    <main className={isPlaying ? style.main_active : style.main} onClick={playPause}>
       <img className={style.img} src={track.album.cover_big} alt="" />
       <div className={style.div_info_music}>
         <span className={isPlaying ? style.nome_active : style.nome}>{track.title}</span>

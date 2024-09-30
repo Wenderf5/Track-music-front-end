@@ -8,6 +8,16 @@
     cursor: pointer;
 }
 
+.main_active {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: #535353;
+    cursor: pointer;
+}
+
 .img {
     width: 45px;
     border-radius: 3px;
