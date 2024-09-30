@@ -14,7 +14,7 @@ export function Search() {
 
     useEffect(() => {
         if (music === "") {
-            async function CallApi() {   //http://localhost:8080/top-music
+            async function CallApi() { 
                 const response = await fetch(`https://track-music-server.vercel.app/top-music`, {
                     method: 'GET',
                 });
@@ -26,7 +26,7 @@ export function Search() {
     }, [music]);
 
     useEffect(() => {
-        if (debounceValue) {     //http://localhost:8080
+        if (debounceValue) { 
             async function CallApi() {
                 const response = await fetch(`https://track-music-server.vercel.app/music/${debounceValue}`, {
                     method: 'GET',
