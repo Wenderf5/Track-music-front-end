@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.main {
+    width: 100%;
+    display: flex;
+    border: 1px #09ff00 solid;
+    border-radius: 5px;
+    background-color: black;
+}
+
+.pesquisa {
+    flex-grow: 1;
+    padding: 13px 5px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding-left: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lupa {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    cursor: pointer;
+}

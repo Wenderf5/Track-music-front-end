@@ -1,0 +1,78 @@
+.main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: #272727;
+    cursor: pointer;
+}
+
+.img {
+    width: 45px;
+    border-radius: 3px;
+}
+
+.div_info_music {
+    flex-grow: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.nome {
+    margin-top: 5px;
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.nome_active {
+    margin-top: 5px;
+    width: 100%;
+    font-size: 16px;
+    color: #09ff00;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.nomebanda {
+    margin-top: 1px;
+    width: 100%;
+    font-size: 12px;
+    color: #888888;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.playPause {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.favoritar {
+    width: 7.5%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .div_info_music {
+        flex-grow: 1;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+}

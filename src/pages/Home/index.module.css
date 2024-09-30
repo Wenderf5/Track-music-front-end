@@ -1,0 +1,111 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.div_center {
+    width: 100%;
+    height: 80%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.blocoPrincipal {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 50%;
+    height: 95%;
+}
+
+.resultado {
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.musicasBloco {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: auto;
+    padding-right: 5px;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #09ff00;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navbar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    top: 0%;
+    height: 70px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.128);
+}
+
+.titulo1 {
+    width: 250px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+    font-size: 17px;
+    transform: translate(-50%, -50%);
+    left: 30%;
+    top: 50%;
+}
+
+h1 {
+    margin-left: 3%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .blocoPrincipal {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        width: 55%;
+        height: 95%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+
+    .blocoPrincipal {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        width: 98%;
+        height: 97%;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .blocoPrincipal {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        width: 98%;
+        height: 97%;
+    }
+}
