@@ -7,7 +7,6 @@
 
 .bandaName {
     width: 100%;
-
     text-align: end;
     font-size: 19px;
     color: white;
@@ -22,7 +21,7 @@
     display: flex;
     flex-direction: column;
     border: 1px #5cda58 solid;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: #272727;
 }
 
@@ -37,7 +36,7 @@
 
 .img {
     height: 100%;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

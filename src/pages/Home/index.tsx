@@ -5,6 +5,7 @@ import { Music } from '../../Components/Music';
 import { Menu } from '../../Components/Menu';
 import { Context } from '../../context/context';
 import { NavBar } from '../../Components/NavBar';
+import { Loading } from '../../Components/Loading';
 
 export function Home() {
     const context = useContext(Context);
@@ -21,9 +22,9 @@ export function Home() {
                     <Search />
                     <div className={style.resultado}>Resultados da pesquisa :</div>
                     <div className={style.musicasBloco}>
-                        {musics?.map((track, index) => (
+                        {musics ? musics.map((track, index) => (
                             <Music key={index} track={track} />
-                        ))}
+                        )) : <Loading />}
                     </div>
                 </div>
                 <Menu />
